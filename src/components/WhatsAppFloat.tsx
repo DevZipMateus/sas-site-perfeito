@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import { X } from 'lucide-react';
 
 const WhatsAppFloat = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,10 +24,14 @@ const WhatsAppFloat = () => {
       {/* Botão principal do WhatsApp */}
       <button
         onClick={handleWhatsAppClick}
-        className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl transition-all duration-300 transform hover:scale-110 animate-pulse"
+        className="rounded-full p-0 shadow-2xl transition-all duration-300 transform hover:scale-110 animate-pulse"
         aria-label="Falar no WhatsApp"
       >
-        <MessageCircle className="h-8 w-8" />
+        <img 
+          src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" 
+          alt="WhatsApp" 
+          className="h-16 w-16 rounded-full"
+        />
       </button>
 
       {/* Tooltip */}

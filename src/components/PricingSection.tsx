@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Check } from 'lucide-react';
+import { Check, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const PricingSection = () => {
@@ -118,16 +118,22 @@ const PricingSection = () => {
               <Button 
                 onClick={() => window.open('https://wa.me/5562984092737', '_blank')}
                 size="lg"
-                className="btn-hero px-8 py-4 text-lg"
+                className="btn-hero px-8 py-4 text-lg flex items-center justify-center"
               >
+                <img 
+                  src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" 
+                  alt="WhatsApp" 
+                  className="h-5 w-5 mr-2"
+                />
                 Solicitar Consultoria
               </Button>
               <Button 
                 onClick={() => window.location.href = 'mailto:marcelo.meacontabilidade@gmail.com'}
                 size="lg"
                 variant="outline"
-                className="btn-outline px-8 py-4 text-lg"
+                className="btn-outline px-8 py-4 text-lg flex items-center justify-center"
               >
+                <Mail className="mr-2 h-5 w-5" />
                 Enviar E-mail
               </Button>
             </div>

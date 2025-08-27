@@ -91,8 +91,13 @@ const Header = () => {
               </button>
               <Button 
                 onClick={() => window.open('https://wa.me/5562984092737', '_blank')}
-                className="px-6 bg-secondary hover:bg-secondary/80 text-white transition-all duration-300"
+                className="px-6 bg-secondary hover:bg-secondary/80 text-white transition-all duration-300 flex items-center"
               >
+                <img 
+                  src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" 
+                  alt="WhatsApp" 
+                  className="h-4 w-4 mr-2"
+                />
                 Fale Conosco
               </Button>
             </nav>
@@ -139,8 +144,13 @@ const Header = () => {
               </button>
               <Button 
                 onClick={() => window.open('https://wa.me/5562984092737', '_blank')}
-                className="bg-secondary hover:bg-secondary/80 text-white w-full"
+                className="bg-secondary hover:bg-secondary/80 text-white w-full flex items-center justify-center"
               >
+                <img 
+                  src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" 
+                  alt="WhatsApp" 
+                  className="h-4 w-4 mr-2"
+                />
                 Fale Conosco
               </Button>
             </nav>

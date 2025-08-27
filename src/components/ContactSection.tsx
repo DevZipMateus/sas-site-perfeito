@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, Instagram, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -36,7 +35,11 @@ const ContactSection = () => {
                   className="service-card p-6 rounded-2xl flex items-center space-x-4 hover:shadow-xl transition-all duration-300"
                 >
                   <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center">
-                    <Phone className="h-8 w-8 text-white" />
+                    <img 
+                      src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" 
+                      alt="WhatsApp" 
+                      className="h-8 w-8"
+                    />
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-2">Telefone/WhatsApp</h4>
@@ -104,9 +107,13 @@ const ContactSection = () => {
                   <Button 
                     onClick={() => window.open('https://wa.me/5562984092737', '_blank')}
                     size="lg"
-                    className="btn-primary w-full py-4 text-lg group"
+                    className="btn-primary w-full py-4 text-lg group flex items-center justify-center"
                   >
-                    <Phone className="mr-3 h-5 w-5" />
+                    <img 
+                      src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" 
+                      alt="WhatsApp" 
+                      className="h-5 w-5 mr-3"
+                    />
                     Falar no WhatsApp
                     <Send className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
