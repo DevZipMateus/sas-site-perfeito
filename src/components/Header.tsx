@@ -59,7 +59,7 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="/lovable-uploads/4b51bbab-66c5-4a19-872a-16e15622ee7c.png" 
+                src="/lovable-uploads/7b28aa6f-a6a1-4e11-8135-fc96a629cfb8.png" 
                 alt="SAS Contabilidade - Logo" 
                 className="h-10 w-auto"
               />
