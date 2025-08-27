@@ -11,9 +11,9 @@ const Footer = () => {
             {/* Logo e descrição */}
             <div className="space-y-6">
               <img 
-                src="/lovable-uploads/4b51bbab-66c5-4a19-872a-16e15622ee7c.png" 
+                src="/lovable-uploads/7b28aa6f-a6a1-4e11-8135-fc96a629cfb8.png" 
                 alt="SAS Contabilidade - Logo" 
-                className="h-16 w-auto filter brightness-0 invert"
+                className="h-16 w-auto"
               />
               <p className="text-primary-foreground/80 leading-relaxed">
                 Empresa familiar desde 2014, oferecendo soluções contábeis completas 
