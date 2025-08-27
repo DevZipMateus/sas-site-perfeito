@@ -9,7 +9,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -27,8 +27,8 @@ const Header = () => {
     <>
       {/* Barra de contato superior */}
       <div className="bg-primary text-primary-foreground py-2 px-4 text-sm">
-        <div className="container mx-auto flex flex-wrap justify-between items-center gap-2">
-          <div className="flex items-center gap-4">
+        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
             <a 
               href="tel:62984092737" 
               className="flex items-center gap-2 hover:text-white/80 transition-colors"
@@ -44,56 +44,68 @@ const Header = () => {
               <span>marcelo.meacontabilidade@gmail.com</span>
             </a>
           </div>
-          <div className="text-xs opacity-90">
+          <div className="text-xs opacity-90 text-center sm:text-right">
             Rua São Jerônimo, qd. 121 lt. 02, Jd. Alto Paraiso - Aparecida de Goiânia/GO
           </div>
         </div>
       </div>
 
       {/* Header principal */}
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-xl shadow-lg' : 'bg-transparent'
+      <header className={`sticky top-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-white shadow-lg' : 'bg-primary'
       }`}>
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
               <img 
                 src="/lovable-uploads/4b51bbab-66c5-4a19-872a-16e15622ee7c.png" 
                 alt="SAS Contabilidade - Logo" 
-                className="h-12 w-auto"
+                className="h-10 w-auto"
               />
             </div>
 
             {/* Menu Desktop */}
-            <nav className="hidden lg:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-6">
               <button 
                 onClick={() => scrollToSection('home')}
-                className={`nav-link ${isScrolled ? 'text-primary' : 'text-white'}`}
+                className={`font-medium transition-colors ${
+                  isScrolled ? 'text-primary hover:text-primary-light' : 'text-white hover:text-white/80'
+                }`}
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection('sobre')}
-                className={`nav-link ${isScrolled ? 'text-primary' : 'text-white'}`}
+                className={`font-medium transition-colors ${
+                  isScrolled ? 'text-primary hover:text-primary-light' : 'text-white hover:text-white/80'
+                }`}
               >
                 Sobre Nós
               </button>
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className={`nav-link ${isScrolled ? 'text-primary' : 'text-white'}`}
+                className={`font-medium transition-colors ${
+                  isScrolled ? 'text-primary hover:text-primary-light' : 'text-white hover:text-white/80'
+                }`}
               >
                 Serviços
               </button>
               <button 
                 onClick={() => scrollToSection('contato')}
-                className={`nav-link ${isScrolled ? 'text-primary' : 'text-white'}`}
+                className={`font-medium transition-colors ${
+                  isScrolled ? 'text-primary hover:text-primary-light' : 'text-white hover:text-white/80'
+                }`}
               >
                 Contato
               </button>
               <Button 
                 onClick={() => window.open('https://wa.me/5562984092737', '_blank')}
-                className={`${isScrolled ? 'btn-primary' : 'btn-hero'} px-6`}
+                className={`px-6 ${
+                  isScrolled 
+                    ? 'bg-secondary hover:bg-secondary-light text-white' 
+                    : 'bg-white/10 text-white border border-white/30 hover:bg-white hover:text-primary backdrop-blur-sm'
+                } transition-all duration-300`}
               >
                 Fale Conosco
               </Button>
@@ -103,7 +115,9 @@ const Header = () => {
             <Button
               variant="ghost"
               size="sm"
-              className={`lg:hidden ${isScrolled ? 'text-primary' : 'text-white'}`}
+              className={`lg:hidden ${
+                isScrolled ? 'text-primary hover:text-primary-light' : 'text-white hover:text-white/80'
+              }`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -117,31 +131,31 @@ const Header = () => {
             <nav className="container mx-auto px-4 py-4 space-y-4">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="block w-full text-left text-primary hover:text-primary-light transition-colors"
+                className="block w-full text-left text-primary hover:text-primary-light transition-colors font-medium"
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection('sobre')}
-                className="block w-full text-left text-primary hover:text-primary-light transition-colors"
+                className="block w-full text-left text-primary hover:text-primary-light transition-colors font-medium"
               >
                 Sobre Nós
               </button>
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className="block w-full text-left text-primary hover:text-primary-light transition-colors"
+                className="block w-full text-left text-primary hover:text-primary-light transition-colors font-medium"
               >
                 Serviços
               </button>
               <button 
                 onClick={() => scrollToSection('contato')}
-                className="block w-full text-left text-primary hover:text-primary-light transition-colors"
+                className="block w-full text-left text-primary hover:text-primary-light transition-colors font-medium"
               >
                 Contato
               </button>
               <Button 
                 onClick={() => window.open('https://wa.me/5562984092737', '_blank')}
-                className="btn-primary w-full"
+                className="bg-secondary hover:bg-secondary-light text-white w-full"
               >
                 Fale Conosco
               </Button>
