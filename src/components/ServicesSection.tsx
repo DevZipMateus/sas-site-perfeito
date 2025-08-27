@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { 
   Building2, 
@@ -9,8 +10,7 @@ import {
   UserCheck,
   Shield,
   Monitor,
-  FileBarChart,
-  Vote
+  FileBarChart
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -75,12 +75,6 @@ const ServicesSection = () => {
       title: 'Imposto de Renda',
       description: 'Declaração de Imposto de Renda para pessoas físicas e jurídicas com máxima segurança.',
       color: 'secondary'
-    },
-    {
-      icon: Vote,
-      title: 'Contabilidade Eleitoral',
-      description: 'Serviços completos de contabilidade eleitoral para partidos políticos e campanhas eleitorais.',
-      color: 'primary'
     }
   ];
 
