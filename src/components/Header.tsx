@@ -51,9 +51,7 @@ const Header = () => {
       </div>
 
       {/* Header principal */}
-      <header className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-primary'
-      }`}>
+      <header className="sticky top-0 z-50 bg-white shadow-lg">
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -69,43 +67,31 @@ const Header = () => {
             <nav className="hidden lg:flex items-center space-x-6">
               <button 
                 onClick={() => scrollToSection('home')}
-                className={`font-medium transition-colors ${
-                  isScrolled ? 'text-primary hover:text-primary-light' : 'text-white hover:text-white/80'
-                }`}
+                className="font-medium text-primary hover:text-primary/80 transition-colors"
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection('sobre')}
-                className={`font-medium transition-colors ${
-                  isScrolled ? 'text-primary hover:text-primary-light' : 'text-white hover:text-white/80'
-                }`}
+                className="font-medium text-primary hover:text-primary/80 transition-colors"
               >
                 Sobre Nós
               </button>
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className={`font-medium transition-colors ${
-                  isScrolled ? 'text-primary hover:text-primary-light' : 'text-white hover:text-white/80'
-                }`}
+                className="font-medium text-primary hover:text-primary/80 transition-colors"
               >
                 Serviços
               </button>
               <button 
                 onClick={() => scrollToSection('contato')}
-                className={`font-medium transition-colors ${
-                  isScrolled ? 'text-primary hover:text-primary-light' : 'text-white hover:text-white/80'
-                }`}
+                className="font-medium text-primary hover:text-primary/80 transition-colors"
               >
                 Contato
               </button>
               <Button 
                 onClick={() => window.open('https://wa.me/5562984092737', '_blank')}
-                className={`px-6 ${
-                  isScrolled 
-                    ? 'bg-secondary hover:bg-secondary-light text-white' 
-                    : 'bg-white/10 text-white border border-white/30 hover:bg-white hover:text-primary backdrop-blur-sm'
-                } transition-all duration-300`}
+                className="px-6 bg-secondary hover:bg-secondary/80 text-white transition-all duration-300"
               >
                 Fale Conosco
               </Button>
@@ -115,9 +101,7 @@ const Header = () => {
             <Button
               variant="ghost"
               size="sm"
-              className={`lg:hidden ${
-                isScrolled ? 'text-primary hover:text-primary-light' : 'text-white hover:text-white/80'
-              }`}
+              className="lg:hidden text-primary hover:text-primary/80"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -131,31 +115,31 @@ const Header = () => {
             <nav className="container mx-auto px-4 py-4 space-y-4">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="block w-full text-left text-primary hover:text-primary-light transition-colors font-medium"
+                className="block w-full text-left text-primary hover:text-primary/80 transition-colors font-medium"
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection('sobre')}
-                className="block w-full text-left text-primary hover:text-primary-light transition-colors font-medium"
+                className="block w-full text-left text-primary hover:text-primary/80 transition-colors font-medium"
               >
                 Sobre Nós
               </button>
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className="block w-full text-left text-primary hover:text-primary-light transition-colors font-medium"
+                className="block w-full text-left text-primary hover:text-primary/80 transition-colors font-medium"
               >
                 Serviços
               </button>
               <button 
                 onClick={() => scrollToSection('contato')}
-                className="block w-full text-left text-primary hover:text-primary-light transition-colors font-medium"
+                className="block w-full text-left text-primary hover:text-primary/80 transition-colors font-medium"
               >
                 Contato
               </button>
               <Button 
                 onClick={() => window.open('https://wa.me/5562984092737', '_blank')}
-                className="bg-secondary hover:bg-secondary-light text-white w-full"
+                className="bg-secondary hover:bg-secondary/80 text-white w-full"
               >
                 Fale Conosco
               </Button>
