@@ -26,79 +26,82 @@ const Header = () => {
   return (
     <>
       {/* Barra de contato superior */}
-      <div className="bg-primary text-primary-foreground py-2 px-4 text-sm">
-        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+      <div className="bg-primary text-primary-foreground py-2 px-4 text-xs md:text-sm">
+        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 md:gap-2">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
             <a 
               href="tel:62984092737" 
-              className="flex items-center gap-2 hover:text-white/80 transition-colors"
+              className="flex items-center gap-1 md:gap-2 hover:text-white/80 transition-colors"
             >
-              <Phone className="h-4 w-4" />
+              <Phone className="h-3 w-3 md:h-4 md:w-4" />
               <span>(62) 98409-2737</span>
             </a>
             <a 
               href="mailto:marcelo.meacontabilidade@gmail.com" 
-              className="flex items-center gap-2 hover:text-white/80 transition-colors"
+              className="flex items-center gap-1 md:gap-2 hover:text-white/80 transition-colors"
             >
-              <Mail className="h-4 w-4" />
-              <span>marcelo.meacontabilidade@gmail.com</span>
+              <Mail className="h-3 w-3 md:h-4 md:w-4" />
+              <span className="hidden sm:inline">marcelo.meacontabilidade@gmail.com</span>
+              <span className="sm:hidden">E-mail</span>
             </a>
           </div>
           <div className="text-xs opacity-90 text-center sm:text-right">
-            Rua São Jerônimo, qd. 121 lt. 02, Jd. Alto Paraiso - Aparecida de Goiânia/GO
+            <span className="hidden lg:inline">Rua São Jerônimo, qd. 121 lt. 02, Jd. Alto Paraiso - Aparecida de Goiânia/GO</span>
+            <span className="lg:hidden">Aparecida de Goiânia/GO</span>
           </div>
         </div>
       </div>
 
       {/* Header principal */}
       <header className="sticky top-0 z-50 bg-white shadow-lg">
-        <div className="container mx-auto px-4 py-3">
+        <div className="container mx-auto px-4 py-2 md:py-3">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
               <img 
                 src="/lovable-uploads/7b28aa6f-a6a1-4e11-8135-fc96a629cfb8.png" 
                 alt="SAS Contabilidade - Logo" 
-                className="h-10 w-auto"
+                className="h-8 md:h-10 w-auto"
               />
             </div>
 
             {/* Menu Desktop */}
-            <nav className="hidden lg:flex items-center space-x-6">
+            <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="font-medium text-primary hover:text-primary/80 transition-colors"
+                className="font-medium text-primary hover:text-primary/80 transition-colors text-sm xl:text-base"
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection('sobre')}
-                className="font-medium text-primary hover:text-primary/80 transition-colors"
+                className="font-medium text-primary hover:text-primary/80 transition-colors text-sm xl:text-base"
               >
                 Sobre Nós
               </button>
               <button 
                 onClick={() => scrollToSection('servicos')}
-                className="font-medium text-primary hover:text-primary/80 transition-colors"
+                className="font-medium text-primary hover:text-primary/80 transition-colors text-sm xl:text-base"
               >
                 Serviços
               </button>
               <button 
                 onClick={() => scrollToSection('contato')}
-                className="font-medium text-primary hover:text-primary/80 transition-colors"
+                className="font-medium text-primary hover:text-primary/80 transition-colors text-sm xl:text-base"
               >
                 Contato
               </button>
               <Button 
                 onClick={() => window.open('https://wa.me/5562984092737', '_blank')}
-                className="px-6 bg-secondary hover:bg-secondary/80 text-white transition-all duration-300 flex items-center"
+                className="px-4 lg:px-6 py-2 bg-secondary hover:bg-secondary/80 text-white transition-all duration-300 flex items-center text-sm lg:text-base"
               >
                 <img 
                   src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" 
                   alt="WhatsApp" 
-                  className="h-4 w-4 mr-2"
+                  className="h-3 w-3 lg:h-4 lg:w-4 mr-1 lg:mr-2"
                 />
-                Fale Conosco
+                <span className="hidden xl:inline">Fale Conosco</span>
+                <span className="xl:hidden">Contato</span>
               </Button>
             </nav>
 
