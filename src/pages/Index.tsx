@@ -11,8 +11,6 @@ import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 
 const Index = () => {
-  console.log('Index component loading...');
-  
   useEffect(() => {
     // Configuração de meta tags SEO
     document.title = 'SAS Contabilidade - Sua Contabilidade Perto de Você | Aparecida de Goiânia';
