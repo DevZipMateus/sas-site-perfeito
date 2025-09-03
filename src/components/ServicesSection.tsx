@@ -81,8 +81,8 @@ const ServicesSection = () => {
             return <div key={index} className="service-card p-8 rounded-2xl group" style={{
               animationDelay: `${index * 0.1}s`
             }}>
-                  <div className={`w-16 h-16 ${isPrimary ? 'bg-gradient-primary' : 'bg-gradient-secondary'} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className="h-8 w-8 text-white" />
+                  <div className="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold text-primary mb-4 group-hover:text-primary-light transition-colors">
                     {service.title}
