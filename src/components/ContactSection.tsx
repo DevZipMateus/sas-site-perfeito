@@ -1,10 +1,8 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, Instagram, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const ContactSection = () => {
-  return (
-    <section id="contato" className="py-20 section-gradient">
+  return <section id="contato" className="py-20 section-gradient">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header da seção */}
@@ -28,18 +26,9 @@ const ContactSection = () => {
 
               {/* Cartões de contato */}
               <div className="space-y-6">
-                <a 
-                  href="https://wa.me/5562984092737" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="service-card p-6 rounded-2xl flex items-center space-x-4 hover:shadow-xl transition-all duration-300"
-                >
+                <a href="https://wa.me/5562984092737" target="_blank" rel="noopener noreferrer" className="service-card p-6 rounded-2xl flex items-center space-x-4 hover:shadow-xl transition-all duration-300">
                   <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center">
-                    <img 
-                      src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" 
-                      alt="WhatsApp" 
-                      className="h-8 w-8"
-                    />
+                    <img src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" alt="WhatsApp" className="h-8 w-8" />
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-2">Telefone/WhatsApp</h4>
@@ -47,11 +36,8 @@ const ContactSection = () => {
                   </div>
                 </a>
 
-                <a 
-                  href="mailto:marcelo.meacontabilidade@gmail.com" 
-                  className="service-card p-6 rounded-2xl flex items-center space-x-4 hover:shadow-xl transition-all duration-300"
-                >
-                  <div className="w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center">
+                <a href="mailto:marcelo.meacontabilidade@gmail.com" className="service-card p-6 rounded-2xl flex items-center space-x-4 hover:shadow-xl transition-all duration-300">
+                  <div className="w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center bg-zinc-950">
                     <Mail className="h-8 w-8 text-white" />
                   </div>
                   <div>
@@ -61,7 +47,7 @@ const ContactSection = () => {
                 </a>
 
                 <div className="service-card p-6 rounded-2xl flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center">
+                  <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center bg-neutral-400">
                     <MapPin className="h-8 w-8 text-white" />
                   </div>
                   <div>
@@ -74,13 +60,8 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                <a 
-                  href="https://www.instagram.com/sas.contabilidade/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="service-card p-6 rounded-2xl flex items-center space-x-4 hover:shadow-xl transition-all duration-300"
-                >
-                  <div className="w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center">
+                <a href="https://www.instagram.com/sas.contabilidade/" target="_blank" rel="noopener noreferrer" className="service-card p-6 rounded-2xl flex items-center space-x-4 hover:shadow-xl transition-all duration-300">
+                  <div className="w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center bg-red-400">
                     <Instagram className="h-8 w-8 text-white" />
                   </div>
                   <div>
@@ -104,26 +85,13 @@ const ContactSection = () => {
                 </p>
 
                 <div className="space-y-4">
-                  <Button 
-                    onClick={() => window.open('https://wa.me/5562984092737', '_blank')}
-                    size="lg"
-                    className="btn-primary w-full py-4 text-lg group flex items-center justify-center"
-                  >
-                    <img 
-                      src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" 
-                      alt="WhatsApp" 
-                      className="h-5 w-5 mr-3"
-                    />
+                  <Button onClick={() => window.open('https://wa.me/5562984092737', '_blank')} size="lg" className="btn-primary w-full py-4 text-lg group flex items-center justify-center">
+                    <img src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" alt="WhatsApp" className="h-5 w-5 mr-3" />
                     Falar no WhatsApp
                     <Send className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
 
-                  <Button 
-                    onClick={() => window.location.href = 'mailto:marcelo.meacontabilidade@gmail.com'}
-                    size="lg"
-                    variant="outline"
-                    className="btn-outline w-full py-4 text-lg"
-                  >
+                  <Button onClick={() => window.location.href = 'mailto:marcelo.meacontabilidade@gmail.com'} size="lg" variant="outline" className="btn-outline w-full py-4 text-lg">
                     <Mail className="mr-3 h-5 w-5" />
                     Enviar E-mail
                   </Button>
@@ -157,8 +125,6 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
