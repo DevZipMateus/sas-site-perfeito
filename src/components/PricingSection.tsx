@@ -53,8 +53,8 @@ const PricingSection = () => {
                     {plan.title}
                   </h3>
                   
-                  <div className="mb-6 md:mb-8">
-                    <div className="flex flex-col gap-2">
+                  <div className="mb-4 md:mb-6">
+                    <div className="flex flex-col gap-1">
                       <div className="flex justify-between items-center">
                         <span className="text-muted-foreground text-sm">Contrato mensal:</span>
                         <span className={`font-bold text-lg ${isPrimary ? 'text-primary' : 'text-secondary'}`}>
