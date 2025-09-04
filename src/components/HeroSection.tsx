@@ -93,8 +93,8 @@ const HeroSection = () => {
             </div>
             <div className="glass-card p-4 md:p-6 rounded-2xl bg-gray-950">
               <TrendingUp className="h-6 w-6 md:h-8 md:w-8 text-white mx-auto mb-2 md:mb-3" />
-              <div className="text-2xl md:text-3xl font-bold text-white mb-1 md:mb-2">24h</div>
-              <div className="text-white/80 text-sm md:text-base">Suporte Disponível</div>
+              <div className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-2">Suporte</div>
+              <div className="text-white/80 text-sm md:text-base">Humanizado</div>
             </div>
           </div>
         </div>
