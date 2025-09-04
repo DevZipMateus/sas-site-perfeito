@@ -34,7 +34,7 @@ const Index = () => {
 
     const ogImage = document.querySelector('meta[property="og:image"]');
     if (ogImage) {
-      ogImage.setAttribute('content', '/lovable-uploads/7b28aa6f-a6a1-4e11-8135-fc96a629cfb8.png');
+      ogImage.setAttribute('content', '/lovable-uploads/8030153d-c913-4366-bab3-542dc0b8eca8.png');
     }
 
     const ogUrl = document.querySelector('meta[property="og:url"]');
