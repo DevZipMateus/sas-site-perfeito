@@ -1,17 +1,12 @@
-
 import React from 'react';
 import { Building2, Users, Target, Award } from 'lucide-react';
-
 const AboutSection = () => {
-  return (
-    <section id="sobre" className="py-20 section-gradient">
+  return <section id="sobre" className="py-20 section-gradient">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header da seção */}
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold font-heading text-primary mb-4 md:mb-6 px-4 sm:px-0">
-              Sobre a SAS Contabilidade
-            </h2>
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold font-heading text-primary mb-4 md:mb-6 px-4 sm:px-0">Sobre a SAS CONTABILIDADE</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6 md:mb-8"></div>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4 sm:px-0">
               Uma empresa familiar que há mais de uma década constrói relacionamentos sólidos 
@@ -110,8 +105,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
