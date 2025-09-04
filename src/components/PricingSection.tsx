@@ -55,13 +55,13 @@ const PricingSection = () => {
                   
                   <div className="mb-4 md:mb-6">
                     <div className="flex flex-col gap-1">
-                      <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-4">
                         <span className="text-muted-foreground text-sm">Contrato mensal:</span>
                         <span className={`font-bold text-lg ${isPrimary ? 'text-primary' : 'text-secondary'}`}>
                           {plan.monthlyPrice}/mês
                         </span>
                       </div>
-                      <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-4">
                         <span className="text-muted-foreground text-sm">Contrato anual:</span>
                         <span className={`font-bold text-lg ${isPrimary ? 'text-primary' : 'text-secondary'}`}>
                           {plan.annualPrice}/mês
