@@ -85,10 +85,9 @@ const PricingSection = () => {
             <h3 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold font-heading mb-4 md:mb-6 text-zinc-950">
               Quer Saber Mais Sobre Nossos Planos?
             </h3>
-            <p className="text-lg md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto text-zinc-950">
-              Entre em contato conosco para uma consultoria gratuita e descubra 
-              qual plano é o mais adequado para o seu negócio.
-            </p>
+            <p className="text-lg md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto text-zinc-950">Entre em contato conosco para uma consultoria gratuita e descubra qual plano é o mais adequado para o seu negócio.
+
+Valores somente mediante contratação no site</p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
               <Button onClick={() => window.open('https://wa.me/5562984092737', '_blank')} size="lg" className="btn-hero px-6 py-3 md:px-8 md:py-4 text-base md:text-lg flex items-center justify-center w-full sm:w-auto">
                 <img src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" alt="WhatsApp" className="h-4 w-4 md:h-5 md:w-5 mr-2" />
