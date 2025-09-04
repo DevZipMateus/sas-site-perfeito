@@ -69,7 +69,7 @@ const PricingSection = () => {
                 <img src="/lovable-uploads/8edf1f78-0d2a-48d0-9215-136645befd25.png" alt="WhatsApp" className="h-4 w-4 md:h-5 md:w-5 mr-2" />
                 Solicitar Consultoria
               </Button>
-              <Button onClick={() => window.location.href = 'mailto:marcelo.meacontabilidade@gmail.com'} size="lg" variant="outline" className="btn-outline px-6 py-3 md:px-8 md:py-4 text-base md:text-lg flex items-center justify-center w-full sm:w-auto">
+              <Button onClick={() => window.location.href = 'mailto:sas.acontabilidade@gmail.com'} size="lg" variant="outline" className="btn-outline px-6 py-3 md:px-8 md:py-4 text-base md:text-lg flex items-center justify-center w-full sm:w-auto">
                 <Mail className="mr-2 h-4 w-4 md:h-5 md:w-5" />
                 Enviar E-mail
               </Button>

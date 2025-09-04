@@ -36,13 +36,13 @@ const ContactSection = () => {
                   </div>
                 </a>
 
-                <a href="mailto:marcelo.meacontabilidade@gmail.com" className="service-card p-4 md:p-6 rounded-2xl flex items-center space-x-3 md:space-x-4 hover:shadow-xl transition-all duration-300">
+                <a href="mailto:sas.acontabilidade@gmail.com" className="service-card p-4 md:p-6 rounded-2xl flex items-center space-x-3 md:space-x-4 hover:shadow-xl transition-all duration-300">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center bg-zinc-950 flex-shrink-0">
                     <Mail className="h-6 w-6 md:h-8 md:w-8 text-white" />
                   </div>
                   <div>
                     <h4 className="text-lg md:text-xl font-semibold text-primary mb-1 md:mb-2">E-mail</h4>
-                    <p className="text-muted-foreground text-sm md:text-base break-all">marcelo.meacontabilidade@gmail.com</p>
+                    <p className="text-muted-foreground text-sm md:text-base break-all">sas.acontabilidade@gmail.com</p>
                   </div>
                 </a>
 
@@ -91,7 +91,7 @@ const ContactSection = () => {
                     <Send className="ml-2 md:ml-3 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
 
-                  <Button onClick={() => window.location.href = 'mailto:marcelo.meacontabilidade@gmail.com'} size="lg" variant="outline" className="btn-outline w-full py-3 md:py-4 text-base md:text-lg">
+                  <Button onClick={() => window.location.href = 'mailto:sas.acontabilidade@gmail.com'} size="lg" variant="outline" className="btn-outline w-full py-3 md:py-4 text-base md:text-lg">
                     <Mail className="mr-2 md:mr-3 h-4 w-4 md:h-5 md:w-5" />
                     Enviar E-mail
                   </Button>

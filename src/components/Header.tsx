@@ -37,11 +37,11 @@ const Header = () => {
               <span>(62) 98409-2737</span>
             </a>
             <a 
-              href="mailto:marcelo.meacontabilidade@gmail.com" 
+              href="mailto:sas.acontabilidade@gmail.com" 
               className="flex items-center gap-1 md:gap-2 hover:text-white/80 transition-colors"
             >
               <Mail className="h-3 w-3 md:h-4 md:w-4" />
-              <span className="hidden sm:inline">marcelo.meacontabilidade@gmail.com</span>
+              <span className="hidden sm:inline">sas.acontabilidade@gmail.com</span>
               <span className="sm:hidden">E-mail</span>
             </a>
           </div>

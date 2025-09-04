@@ -36,11 +36,11 @@ const Footer = () => {
                   <span>(62) 98409-2737</span>
                 </a>
                 <a 
-                  href="mailto:marcelo.meacontabilidade@gmail.com" 
+                  href="mailto:sas.acontabilidade@gmail.com" 
                   className="flex items-center space-x-3 hover:text-white/80 transition-colors"
                 >
                   <Mail className="h-5 w-5" />
-                  <span>marcelo.meacontabilidade@gmail.com</span>
+                  <span>sas.acontabilidade@gmail.com</span>
                 </a>
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 mt-1" />
