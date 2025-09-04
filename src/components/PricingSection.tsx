@@ -4,18 +4,26 @@ import { Button } from '@/components/ui/button';
 const PricingSection = () => {
   const plans = [{
     title: 'MEI',
+    monthlyPrice: 'R$ 250,00',
+    annualPrice: 'R$ 200,00',
     features: ['Emissão de notas fiscais', 'Declaração Anual', 'Acompanhamento básico de tributos', 'Registro de 1 Funcionário', 'Máquina de Cartão com taxas reduzidas', 'Aplicativo para Gestão COMMEI', 'Dashboard e Controle de Caixa', 'Contas a Pagar e Receber', 'Clientes e Fornecedores', 'Produtos e Controle de Estoque'],
     color: 'primary'
   }, {
     title: 'Para Micro Empresas',
+    monthlyPrice: 'R$ 650,00',
+    annualPrice: 'R$ 650,00',
     features: ['Apuração de impostos', 'Consultoria fiscal mensal', 'Emissão de guias fiscais', 'Folha de pagamento (até 5 funcionários)', 'Sistema PDV para emissão de NFC-e ilimitado', 'Desconto em certificado digital 20%'],
     color: 'secondary'
   }, {
     title: 'Para Empresas Pequenas',
+    monthlyPrice: 'R$ 760,00',
+    annualPrice: 'R$ 660,00',
     features: ['Sistema PDV com gestão financeira completa', 'Apuração de impostos', 'Consultoria fiscal mensal', 'Emissão de guias fiscais', 'Folha de pagamento (até 5 funcionários)', 'Sistema PDV para emissão de NFC-e ilimitado', 'Desconto em certificado digital 20%'],
     color: 'primary'
   }, {
     title: 'Empresas - Lucro Presumido/Real e 3º Setor',
+    monthlyPrice: 'R$ 1.700,00',
+    annualPrice: 'R$ 1.518,00',
     features: ['Sistema PDV com gestão financeira completa', 'Apuração de impostos', 'Consultoria fiscal mensal', 'Emissão de guias fiscais', 'Folha de pagamento (até 5 funcionários)', 'Sistema PDV para emissão de NFC-e ilimitado', 'Desconto em certificado digital 20%'],
     color: 'secondary'
   }];
@@ -41,9 +49,26 @@ const PricingSection = () => {
             return <div key={index} className="bg-white rounded-3xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border" style={{
               animationDelay: `${index * 0.1}s`
             }}>
-                  <h3 className={`text-xl md:text-2xl font-bold font-heading mb-6 md:mb-8 ${isPrimary ? 'text-primary' : 'text-secondary'}`}>
+                  <h3 className={`text-xl md:text-2xl font-bold font-heading mb-4 md:mb-6 ${isPrimary ? 'text-primary' : 'text-secondary'}`}>
                     {plan.title}
                   </h3>
+                  
+                  <div className="mb-6 md:mb-8">
+                    <div className="flex flex-col gap-2">
+                      <div className="flex justify-between items-center">
+                        <span className="text-muted-foreground text-sm">Contrato mensal:</span>
+                        <span className={`font-bold text-lg ${isPrimary ? 'text-primary' : 'text-secondary'}`}>
+                          {plan.monthlyPrice}/mês
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-muted-foreground text-sm">Contrato anual:</span>
+                        <span className={`font-bold text-lg ${isPrimary ? 'text-primary' : 'text-secondary'}`}>
+                          {plan.annualPrice}/mês
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                   
                   <ul className="space-y-3 md:space-y-4 mb-6 md:mb-8">
                     {plan.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-start gap-3">
